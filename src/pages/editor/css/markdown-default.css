@@ -1,0 +1,70 @@
+
+#markdown {
+  width: 50%;
+  padding: 4px;
+
+  background-color: #eee;
+  animation: fade-in-left ease 0.4s forwards;
+}
+
+#markdown.activate {border-radius: 0;}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#markdown > h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+  border-left: 2px solid var(--border-color);
+  padding-left: 3.9px;
+  transition: color .5s ease;
+}
+
+#markdown > h1:hover,
+h2:hover, h3:hover,
+h4:hover, h5:hover {
+  color: var(--primary-color);
+}
+
+#markdown > hr {
+  width: 95%;
+  opacity: 0.4;
+}
+
+#markdown > pre {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background-color: var(--grey);
+}
+
+#markdown > pre > code {
+  color: var(--white);
+  word-wrap: break-word;
+}
+
+#markdown > ul {
+  list-style: none;
+}
+
+#markdown > ul > li::before {
+  content: "\2022";
+  padding-right: 6px;
+  color: var(--primary-color)
+}
+
+a {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#markdown > blockquote {
+  padding-left: 8.4px;
+  border-left: 3.5px solid rgba(23, 23, 23, .2);
+}

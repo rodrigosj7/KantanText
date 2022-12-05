@@ -1,0 +1,120 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --primary-color: rgb(146, 76, 163);
+  --border-color: rgb(146, 76, 163, .4);
+  --black: rgb(26, 27, 36);
+  --grey: #282A3A;
+  --white: #eee;
+}
+
+body {
+  background-color: var(--black);
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+.editor {
+  display: flex;
+  height: 97%;
+  overflow: hidden;
+}
+
+.statusbar {
+  display: flex;
+  flex-direction: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  gap: 32px;
+
+  width: 100%;
+  height: 22px;
+  color: #232323;
+  background: var(--white);
+  box-shadow: 0 -2px 10px #2323233a;
+}
+
+.statusbar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.statusbar > div > span {
+  font-weight: bold;
+  transition: opacity .3s ease-in;
+}
+
+.statusbar > div > span:hover {opacity: .7;}
+
+#hide-md {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  
+  margin: .4px;
+  border-radius: 50%;
+  border: 2px solid #232323;
+  transition: background-color, padding, border, .5s ease;
+}
+
+#hide-md:hover {
+  background-color: #232323;
+}
+
+#hide-md:checked {
+  border: 1px solid #232323;
+  padding: 2px;
+  background-color: #232323;
+}
+
+.panel {
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  font-size: 17px;
+  overflow: auto;
+}
+
+#text {
+  background-color: var(--black);
+  color: #eee;
+  resize: none;
+  padding: 4.3px 7px;
+  animation: fade-in-right ease 0.4s forwards;
+}
+
+#text:focus {
+  outline: none;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
