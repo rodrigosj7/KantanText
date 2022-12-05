@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <a href="https://github.com/sennshi/kantantext">
+  <a href="https://github.com/sennshi/KantanText">
     <img src="public/logo.png" alt="Logo" width="120" height="120">
   </a>
 <h2 align="center">Kantan Text</h2>
@@ -9,10 +9,10 @@
     Uma ferramenta simples para editar e visualizar arquivos por meio da syntaxe markdown
     <br /><br />
     <div>
-      <img src="https://img.shields.io/github/stars/sennshi/kantantext.svg?style=flat" alt="stars badge">
-      <img src="https://img.shields.io/github/repo-size/sennshi/kantantext?style=flat" alt="repo size badge">
-      <img src="https://img.shields.io/github/license/sennshi/kantantext.svg?style=flat" alt="licensebadge">
-      <img src="https://img.shields.io/github/languages/count/sennshi/kantantext?style=flat" alt="language count badge">
+      <img src="https://img.shields.io/github/stars/sennshi/KantanText.svg?style=flat" alt="stars badge">
+      <img src="https://img.shields.io/github/repo-size/sennshi/KantanText?style=flat" alt="repo size badge">
+      <img src="https://img.shields.io/github/license/sennshi/KantanText.svg?style=flat" alt="licensebadge">
+      <img src="https://img.shields.io/github/languages/count/sennshi/KantanText?style=flat" alt="language count badge">
     </div>
   </p>
 </div>
@@ -25,7 +25,7 @@ Antes de começar você precisa ter instalado:
 ## 🚀 Instalando KantanText
 Para instalar o KantanText corretamente, siga as seguintes etapas:
 ```
-git clone https://github.com/sennshi/kantantext.git
+git clone https://github.com/sennshi/KantanText.git
 ```
 
 Após clonar-lo, entre na pasta do projeto e execute:
